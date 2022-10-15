@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
-html,
-body {
+html,body {
     height: 100vh;
     width: 100vw;
 }
@@ -27,35 +25,83 @@ body::after{
 header {
     display: flex;
     justify-content: space-between;
-    background: rgb(78, 79, 80);
+    background: rgb(0, 0, 0, .8);
     width: 100vw;
     height: 120px;
 }
 div.logo {
     width: 120px;
     height: 120px;
-    background: lightgray;
+    margin-left: 20px;
+}
+div.logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
 }
 div.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 40px 0;
     height: 120px;
 }
 div.menu a{
-    margin-right: 15px;
+    margin-right: 25px;
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(223, 180, 123);
+    color: rgb(197, 186, 85);
+}
+div.menu a:hover{
+    color: rgb(221, 208, 86);    
 }
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 160px);
 }
-
-footer {
-    background: lightgreen;
-    width: 100vw;
+div.conteudo{
+    width: 80%;
+    height: 400px;
+}
+div.conteudo article{
+    text-align: center;
     height: 60px;
+}
+div.conteudo article h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 200;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.808);
+    border-bottom: 1px solid white;
+}
+div.conteudo article p{
+
+    font-family: 'Arvo', serif;
+    font-size: 26px;
+    margin-top: 30px;
+    color: rgba(250, 220, 51, 0.89);
+    font: bold;
+}
+div.conteudo section{
+    margin: 200px;
+    text-align: center;
+}
+section a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(63, 61, 61, 0.699);
+    font-size: 22px;  
+    font-family: 'Arvo', serif;
+    
+}
+section a:hover{
+    color: rgb(223, 192, 54);
+}
+footer {
+    background: rgb(0, 0, 0, .8);
+    width: 100vw;
+    height: 40px;
 }

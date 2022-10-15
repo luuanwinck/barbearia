@@ -105,3 +105,78 @@ footer {
     width: 100vw;
     height: 40px;
 }
+@media screen and (max-width: 678px){
+    header{
+        display: block;
+        width: 100vw;
+        height: 225px;
+    }
+    div.logo{
+        width: 80px;
+        height: 80px;
+    }
+    div.logo img{
+        width: 80px;
+        height: 80px;
+    }
+    div.icon{
+        text-align: end;
+    }
+    span#burguer{
+        color: white;
+    }
+    span#burguer:hover{
+        color: rgb(184, 170, 107);
+    }
+    div.menu{
+        display: flex;
+        flex-direction: column;
+        height: 145px;
+        margin-top: 0;
+        text-align: end;
+        background: rgba(194, 178, 37, 0.938);
+        border-top: 2px solid white;
+    }
+    div.menu a{
+        margin-left:10px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    main{
+        width: 100vw;
+        height: 339px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    div.conteudo{
+        height: 100%;
+    }
+    div.conteudo article{
+        height: 102px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    div.conteudo article h1{
+        font-size: 35px;
+    }
+    div.conteudo article p{
+        font-size: 18px;
+    }
+    div.conteudo section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        margin: 0;
+    }
+    div.conteudo section a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px) {
+    div.conteudo section{
+        margin-top: 80px;
+    }
+}

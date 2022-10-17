@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    position: relative;
+    isolation: isolate;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+body::after{
+    content:' ';
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    opacity: .4;
+    background: url('../image/fundo-barbearia2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0, .8);
+    width: 100vw;
+    height: 120px;
+}
+div.logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+}
+div.logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+span#burguer{
+    display: none;
+}
+div.menu{
+    margin: 40px 0;
+    height: 120px;
+}
+div.menu a{
+    margin-right: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(197, 186, 85);
+}
+div.menu a:hover{
+    color: rgb(221, 208, 86);    
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 160px);
+}
+div.conteudo{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulo{
+    width: 100%;
+    height: 20%;  
+    text-align: center;
+    justify-content: center;
+}
+.titulo h1
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: rgba(202, 178, 38, 0.808);
+    border-bottom: 2px solid rgb(153, 151, 151);
+}
+.foto{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto img{
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    border: 1px solid rgb(22, 22, 22);  
+}
+.paragrafo{
+    width: 50%;
+    height: 80%;
+    background-color: rgba(7, 7, 7, 0.432);
+}
+.paragrafo p {
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: rgba(247, 238, 238, 0.863);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.842);
+    width: 100vw;
+    height: 6vh;
+}
+footer p{
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.623);
+}
+@media screen and (min-width: 378px) and (max-width: 550px){
+   header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 31.2vh;
+   }
+   div.logo{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 50vw;
+    height: 12vh;
+    margin-bottom: 0;
+   }
+   div.logo img{
+    width: 50%;
+    height: 90%;
+   }
+   div.icon{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 50vw;
+    height: 12vh;
+    margin-bottom: 0;
+   }
+   span#burguer{
+    color: white;
+    display: flex;
+   }
+
+   div.menu{
+    display: flex;
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100vw;
+    height: 19vh;
+    border-top: 2px solid white;
+    background: rgb(185, 167, 66);
+   }
+   div.menu a{
+    margin-right:0 ;
+    color: white;
+    font-size: 18px;
+   }
+   main{
+    margin-top: 0;
+    width: 100vw;
+    height: 62.8vh;
+   }
+   div.conteudo{
+    width: 90%;
+    height: 100%;
+   }
+   div.titulo{
+    width: 100%;
+    height: 10%;
+   }
+   div.titulo h1{
+    font-size: 26px;
+   }
+   div.foto{
+    width: 50%;
+    height: 90%;
+   }
+   div.foto img{
+    width: 70%;
+    height: 70%;
+    border: none;
+    opacity: .8;
+   }
+   div.paragrafo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    width: 50%;
+    height: 80%;
+   }
+   div.paragrafo p{
+    font-size: 11px;
+   }
+   footer{
+    width: 100vw;
+    height: 6vh;
+   }
+}
+@media screen and (min-width: 551px) and (max-width: 768px){
+    span#burguer{
+        display: block;
+    }
+    div.menu a{
+        font-size: 12px;
+    }
+    div.paragrafo p{
+     font-size: 16px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    div.paragrafo p{
+     font-size: 17px;
+    }
+}

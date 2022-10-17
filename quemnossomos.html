@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Barbearia</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/quemnosomos.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /><!---utilizei esses icones no google icon-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Dancing+Script&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Libre+Franklin:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body onresize="mudouTamanho()">
     <header>
@@ -20,7 +22,7 @@
         <div class="icon">
             <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         </div>        
-        <div id="itens" class="menu">
+        <div class="menu">
             <a href="index.html">HOME</a>
             <a href="serviços.html">SERVIÇOS</a>
             <a href="quemnossomos.html">QUEM NÓS SOMOS</a>
@@ -28,19 +30,25 @@
         </div>
     </header>
     <main>
-        <div class="conteudo">
-           <article>
-                <h1>Los Ramos Barbershop 1998</h1>
-                <p>Qualidade existe quando se ATENTA <br>
-                   Aos mínimos detalhes</p>
-           </article>
-           <section class="agendamento">
-                <a href="https://wa.me/+5521983175307" target ="_blank">Agendamento</a>
-           </section>
+        <div class="conteudo">   
+         <div class="titulo">
+            <h1> Quem somos</h1>
+         </div>
+         <div class="foto">
+            <img src="image/foto-cosmetico.jpeg" alt="fotodonobarberia">
+         </div>
+         <div class="paragrafo">
+              <p>  Queremos oferecer o melhor serviço de <br> cuidados com o cabelo e a barba
+              do homem moderno, favorecendo sua autoestima com sofisticação e elegância.<br>
+              Nosso objetivo é ser a barbearia de referencia para Zona oeste, como a melhor<br>
+              opção pela qualidade de serviço e relacionamento. Cada cliente é único <br>
+              e ser a sua preferência no momento da sua escolha é algo que valorizamos muito.
+            </p>
+         </div>
         </div>
     </main>
     <footer>
-        <p>Desenvolvido por Luan Winck e Leticia Ferreira</p>
+        <p> <p>Desenvolvido por Luan Winck e Leticia Ferreira</p></p>
     </footer>
     <script src="./javascript/burguer.js"></script>
 </body>

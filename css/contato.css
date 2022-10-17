@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    position: relative;
+    isolation: isolate;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+}
+body::after{
+    content:' ';
+    position: fixed;
+    z-index: -1;
+    inset: 0;
+    opacity: .4;
+    background: url('../image/foto-fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0, .8);
+    width: 100vw;
+    height: 120px;
+}
+div.logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+}
+div.logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+span#burguer{
+    display: none;
+}
+div.menu{
+    margin: 40px 0;
+    height: 120px;
+}
+div.menu a{
+    margin-right: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(197, 186, 85);
+}
+div.menu a:hover{
+    color: rgb(221, 208, 86);    
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 160px);
+}
+div.conteudo{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+}
+.titulo{
+    width: 100%;
+    height: 20%;  
+    text-align: center;
+    justify-content: center;
+    
+}
+.titulo h1
+{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 200;
+    font-size: 50px;
+    color: rgba(206, 206, 61, 0.808);
+    border-bottom: 2px solid rgb(97, 96, 96)
+}
+.contato{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.473);
+    border: .5px solid rgba(14, 13, 13, 0.671);
+    border-radius: 20px;
+}
+
+.what{
+    width: 30%;
+    height:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.what img {
+    width: 50%;
+    height:50%;
+}
+
+.insta{
+    width: 30%;
+    height:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insta img {
+    width: 40%;
+    height:40%;
+}
+.email{
+    width: 30%;
+    height:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.email img{
+    width: 50%;
+    height:50%;
+
+}
+.formulario{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.473);
+    border-radius: 20px;
+}
+form {
+    /* Centralizar o formulário na pagina */
+    margin: 0 auto;
+    width: 400px;
+    /* Ver o esboço do formulário */
+    padding: 1em;
+    border: 1px solid rgba(204, 204, 204, 0);
+    border-radius: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    color: aliceblue;
+  }
+  
+  input, textarea {
+    /* 
+  Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+       Por padrão, as áreas de texto possuem a mesma fonte */
+    font: 1em sans-serif;
+  
+    /* Para dar o mesmo tamanho a todos os campos de texto*/
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
+    border: 1px solid #999;
+  }
+  
+  input:focus, textarea:focus {
+    /* Para dar um pouco de destaque aos elementos ativos*/
+    border-color: #000;
+  }
+  textarea {
+    /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+    vertical-align: top;
+  
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+  }
+  .button {
+    /* Para posicionar os botões na mesma posição dos campos de texto */
+    padding-left: 90px; /* mesmo tamanho que os elementos do rótulo */
+  }
+  button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
+       entre os rótulos e seus campos de texto*/
+    margin-left: .5em;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.842);
+    width: 100vw;
+    height: 6vh;
+}
+footer p{
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.623);
+}
+@media screen and (max-width: 678px){
+    header{
+        display: block;
+        width: 100vw;
+        height: 225px;
+    }
+    div.logo{
+        width: 80px;
+        height: 80px;
+    }
+    div.logo img{
+        width: 80px;
+        height: 80px;
+    }
+    div.icon{
+        text-align: end;
+    }
+    div.icon{
+        display: flex;
+        justify-content: end;
+    }
+    span#burguer{
+        color: white;
+        display: block;
+    }
+    span#burguer:hover{
+        color: rgb(184, 170, 107);
+    }
+    div.menu{
+        display: flex;
+        flex-direction: column;
+        height: 145px;
+        margin-top: 0;
+        text-align: end;
+        background: rgba(194, 178, 37, 0.938);
+        border-top: 2px solid white;
+    }
+    div.menu a{
+        margin-left:10px;
+        margin-bottom: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    main{
+        width: 100vw;
+        height: 339px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    div.titulo h1{
+        font-size: 26px ;
+    }
+    div.conteudo{
+        height: 100%;
+    }
+    div.conteudo article{
+        height: 102px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    div.conteudo article h1{
+        font-size: 35px;
+    }
+    div.conteudo article p{
+        font-size: 18px;
+    }
+    div.conteudo section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 60px;
+        margin: 0;
+    }
+    div.conteudo section a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px) {
+    div.conteudo section{
+        margin-top: 80px;
+    }
+}
+@media screen and (min-width: 679px) and (max-width: 730px){
+    div.menu a{
+        font-size: 13px;
+    }
+    div.logo{
+        width: 11vw;
+        height: 17vh;
+    }
+    div.logo img{
+        width: 11vw;
+        height: 17vh;
+    }
+}
+@media screen and (min-width: 730px) and (max-width: 883px){
+    div.menu a{
+        font-size: 16px;
+    }
+    div.logo{
+        width: 11vw;
+        height: 17vh;
+    }
+    div.logo img{
+        width: 11vw;
+        height: 17vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    div.conteudo section{
+        margin-top: 80px;
+    }
+}
